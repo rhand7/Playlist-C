@@ -13,7 +13,7 @@
         <!--Playlist-->
         <scene sceneID="M9R-9B-dhw">
             <objects>
-                <tableViewController id="muq-EP-9J8" sceneMemberID="viewController">
+                <tableViewController id="muq-EP-9J8" customClass="DMNPlaylistTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2Uj-51-LpN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,8 +71,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Playlist" id="z5i-9Z-4cC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8SQ-eU-FAh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8SQ-eU-FAh">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="muq-EP-9J8" id="gvZ-yv-rZr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="OIj-hg-F6p" id="Qjn-7m-PXt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvI-nO-eez" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +88,7 @@
         <!--Songs-->
         <scene sceneID="ifK-kk-9aK">
             <objects>
-                <tableViewController id="J73-pv-9Rp" sceneMemberID="viewController">
+                <tableViewController id="J73-pv-9Rp" customClass="DMNPlaylistDetailTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xxf-pA-YTE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,8 +154,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Songs" id="FfT-Es-tj6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HNE-Wp-DRT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="HNE-Wp-DRT">
+                            <connections>
+                                <action selector="addSongButtonTapped:" destination="J73-pv-9Rp" id="YkQ-JA-rfB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistTextField" destination="ebo-kk-buY" id="MnN-dA-Fu7"/>
+                        <outlet property="titleTextField" destination="EDb-s4-8Nf" id="RIC-a2-q01"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocM-BU-rLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,7 +174,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Day-GF-Nc4" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="LhZ-ky-T1V">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LhZ-ky-T1V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0078431372550000003" green="0.75294117650000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
