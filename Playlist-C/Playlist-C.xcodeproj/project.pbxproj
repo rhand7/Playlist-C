@@ -12,6 +12,8 @@
 		2A8826CF1EC0CD9C00A917D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8826CD1EC0CD9C00A917D2 /* Main.storyboard */; };
 		2A8826D11EC0CD9C00A917D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8826D01EC0CD9C00A917D2 /* Assets.xcassets */; };
 		2A8826D41EC0CD9C00A917D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8826D21EC0CD9C00A917D2 /* LaunchScreen.storyboard */; };
+		2A8826E11EC0DF1900A917D2 /* DMNSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8826E01EC0DF1900A917D2 /* DMNSong.m */; };
+		2A8826E41EC0E29200A917D2 /* DMNPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8826E31EC0E29200A917D2 /* DMNPlaylist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		2A8826D01EC0CD9C00A917D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8826D31EC0CD9C00A917D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A8826D51EC0CD9C00A917D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8826DF1EC0DF1900A917D2 /* DMNSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNSong.h; sourceTree = "<group>"; };
+		2A8826E01EC0DF1900A917D2 /* DMNSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNSong.m; sourceTree = "<group>"; };
+		2A8826E21EC0E29200A917D2 /* DMNPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPlaylist.h; sourceTree = "<group>"; };
+		2A8826E31EC0E29200A917D2 /* DMNPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPlaylist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 				2A8826C71EC0CD9C00A917D2 /* AppDelegate.h */,
 				2A8826C81EC0CD9C00A917D2 /* AppDelegate.m */,
 				2A8826CD1EC0CD9C00A917D2 /* Main.storyboard */,
+				2A8826DD1EC0DC3B00A917D2 /* Models */,
+				2A8826DE1EC0DC5000A917D2 /* ModelControllers */,
 				2A8826DC1EC0CE0E00A917D2 /* ViewControllers */,
 				2A8826DB1EC0CDFA00A917D2 /* Resources */,
 				2A8826C41EC0CD9B00A917D2 /* Supporting Files */,
@@ -88,6 +96,24 @@
 			children = (
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A8826DD1EC0DC3B00A917D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A8826DF1EC0DF1900A917D2 /* DMNSong.h */,
+				2A8826E01EC0DF1900A917D2 /* DMNSong.m */,
+				2A8826E21EC0E29200A917D2 /* DMNPlaylist.h */,
+				2A8826E31EC0E29200A917D2 /* DMNPlaylist.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2A8826DE1EC0DC5000A917D2 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8826E11EC0DF1900A917D2 /* DMNSong.m in Sources */,
+				2A8826E41EC0E29200A917D2 /* DMNPlaylist.m in Sources */,
 				2A8826C91EC0CD9C00A917D2 /* AppDelegate.m in Sources */,
 				2A8826C61EC0CD9C00A917D2 /* main.m in Sources */,
 			);
