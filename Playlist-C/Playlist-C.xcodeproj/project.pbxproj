@@ -14,6 +14,7 @@
 		2A8826D41EC0CD9C00A917D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8826D21EC0CD9C00A917D2 /* LaunchScreen.storyboard */; };
 		2A8826E11EC0DF1900A917D2 /* DMNSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8826E01EC0DF1900A917D2 /* DMNSong.m */; };
 		2A8826E41EC0E29200A917D2 /* DMNPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8826E31EC0E29200A917D2 /* DMNPlaylist.m */; };
+		2A8826E71EC0E61700A917D2 /* DMNPlaylistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8826E61EC0E61700A917D2 /* DMNPlaylistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		2A8826E01EC0DF1900A917D2 /* DMNSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNSong.m; sourceTree = "<group>"; };
 		2A8826E21EC0E29200A917D2 /* DMNPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPlaylist.h; sourceTree = "<group>"; };
 		2A8826E31EC0E29200A917D2 /* DMNPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPlaylist.m; sourceTree = "<group>"; };
+		2A8826E51EC0E61700A917D2 /* DMNPlaylistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNPlaylistController.h; sourceTree = "<group>"; };
+		2A8826E61EC0E61700A917D2 /* DMNPlaylistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNPlaylistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		2A8826DE1EC0DC5000A917D2 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A8826E51EC0E61700A917D2 /* DMNPlaylistController.h */,
+				2A8826E61EC0E61700A917D2 /* DMNPlaylistController.m */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8826E11EC0DF1900A917D2 /* DMNSong.m in Sources */,
+				2A8826E71EC0E61700A917D2 /* DMNPlaylistController.m in Sources */,
 				2A8826E41EC0E29200A917D2 /* DMNPlaylist.m in Sources */,
 				2A8826C91EC0CD9C00A917D2 /* AppDelegate.m in Sources */,
 				2A8826C61EC0CD9C00A917D2 /* main.m in Sources */,
